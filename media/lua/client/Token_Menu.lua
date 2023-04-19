@@ -71,7 +71,7 @@ function UIConsumeToken.ConsumeToken(itemStack,player,item)
 	local penaltyCapPercentage = SandboxVars.NotTheEnd.PenaltyCapPercentage;
 
 	
-	local penaltyPercentage = (itemModData.tokenNumber * penaltyIncreasePercentage);
+	local penaltyPercentage = itemModData.tokenNumber * penaltyIncreasePercentage;
 	if penaltyPercentage > penaltyCapPercentage then
 		penaltyPercentage = penaltyCapPercentage;
 	end
